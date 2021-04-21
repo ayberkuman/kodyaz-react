@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "./components/Button";
-
+import Header from "./components/Header"
 
 function App() {
   return (
     <div className="App">
-      <Button name="Katalog"/>
+      <Header/>
+      <Button/>
     </div>
   );
 }

@@ -15,7 +15,12 @@ $lightGray: #2c303a;
   height: 100vh;
   width: 100%;
 
-  background-color: $midGray;
+  background: rgb(37, 40, 48);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 40, 48, 1) 85%,
+    rgba(19, 20, 23, 1) 100%
+  );
 }
 
 //BUTTON
@@ -47,11 +52,35 @@ $lightGray: #2c303a;
   overflow: hidden;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .myButton:hover {
   background-color: $primColor;
   box-shadow: 0 0 10px 2px $primColor;
   color: $darkest;
+}
+
+.myButton2 {
+  background-color: $primColor;
+  box-shadow: 0 0 10px 2px $primColor;
+  color: $darkest;
+  padding: 5px 10px;
+  border-radius: 10px;
+  height: 50px;
+  width: max-content;
+  font-size: 18px;
+  font-family: "News Cycle";
+  transition: 0.5s;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.myButton2:hover {
+  background-color: $darkest;
+  color: $primColor;
 }
 //BUTTON END
 
@@ -77,11 +106,103 @@ $lightGray: #2c303a;
   }
   .buttonWrapper {
     display: flex;
-    .kayıt:hover {
-      background-color: $darkest;
-      transition: 0.8s;
-      border-radius: 20px;
-      box-shadow: 0 0 50px 80px $darkest;
-    }
+  }
+}
+
+//HEADER END
+
+//HERO
+
+.heroWrapper {
+  height: 87vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    color: $primColor;
+    font-family: "Roboto Slab", serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    margin-top: 30px;
+    color: $primColor;
+    font-family: "Roboto Slab", serif;
+    font-weight: lighter;
+    font-size: 1.1rem;
+  }
+}
+
+//HERO END
+
+//LANDİNG BOTTOM
+.bottomWrapper {
+  height: 120vh;
+  width: 100%;
+  background-color: $darkest;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  .arrows {
+    height: 20px;
+  }
+}
+.step1,
+.step2,
+.step3,
+.step4 {
+  width: 700px;
+  height: 150px;
+  background-color: $lightGray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 1px #000;
+  img {
+    width: 80px;
+  }
+}
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  background-color: $darkest;
+  width: 60px;
+  height: 60px;
+  color: wheat;
+  display: grid;
+  place-content: center;
+  font-family: "News Cycle";
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.write1,
+.write2,
+.write3,
+.write4 {
+  width: 300px;
+  height: 100%;
+  color: aliceblue;
+  font-family: "News Cycle";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h3 {
+    font-size: 1.7rem;
+    line-height: 35px;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+  h6 {
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 }

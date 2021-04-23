@@ -1,12 +1,14 @@
 import React from "react";
-import Button from "./components/Button";
+import LandingBottom from "./components/LandingBottom"
 import Header from "./components/Header"
+import Hero from "./components/Hero"
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Button/>
+      <Hero/>
+      <LandingBottom/>
     </div>
   );
 }

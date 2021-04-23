@@ -2,12 +2,9 @@ import "./style.scss"
 
 import React from 'react'
 import Button from "./Button"
+import Button2 from "./Button2"
 
-const x = {
-  backgroundColor: "#fce300", 
-  color:"#131417", 
-  
-}
+
 
 const Header = () => {
   const logo = "( ) => kodla"
@@ -18,7 +15,7 @@ const Header = () => {
       <div className="buttonWrapper">
         <Button name={"Gİrİş Yap"}/>
       <div className="kayıt">  
-        <Button id="me2" style={x} name={"Kayıt Ol"} />
+        <Button2 name={"Kayıt Ol"} />
       </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import React from "react";
-import LandingBottom from "./components/LandingBottom"
-import Header from "./components/Header"
-import Hero from "./components/Hero"
+import LandingBottom from "./components/Landing/LandingBottom"
+import Header from "./components/Landing/Header"
+import Hero from "./components/Landing/Hero"
+import Footer from "./components/Landing/Footer"
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Header/>
       <Hero/>
       <LandingBottom/>
+      <div className="emptyDiv"/>
+      <Footer/>
     </div>
   );
 }

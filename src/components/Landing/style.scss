@@ -206,3 +206,21 @@ $lightGray: #2c303a;
     margin-bottom: 20px;
   }
 }
+
+//LANDİNG BOTTOM END
+
+//FOOTER
+.footerWrapper {
+  background-color: $lightGray;
+  height: 5vh;
+  .line {
+    border: 1px solid $primColor;
+  }
+  p {
+    color: grey;
+  }
+}
+.emptyDiv {
+  height: 20vh;
+  background-color: $darkest;
+}

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 //color palette
 $primColor: #fcee30;
@@ -22,7 +23,30 @@ $lightGray: #2c303a;
     rgba(19, 20, 23, 1) 100%
   );
 }
-
+.myLink {
+  border: 2px solid #fcee30;
+  border-radius: 10px;
+  background: none;
+  padding: 5px 10px;
+  height: 50px;
+  width: max-content;
+  font-size: 18px;
+  font-family: "News Cycle";
+  transition: 0.5s;
+  color: $primColor;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.myLink:hover {
+  background-color: $primColor;
+  box-shadow: 0 0 10px 2px $primColor;
+  color: $darkest;
+}
 //BUTTON
 .myButton {
   // text-decoration: none;

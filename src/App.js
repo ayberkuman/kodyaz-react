@@ -1,36 +1,36 @@
-import React from "react";
-import LandingBottom from "./components/Landing/LandingBottom"
+import {useState} from "react";
 import Header from "./components/Landing/Header"
-import Hero from "./components/Landing/Hero"
-import Footer from "./components/Landing/Footer"
-import {Route, BrowserRouter as Router, Switch, Link} from "react-router-dom"
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom"
 import Catalogue from "./components/Katalog/Catalogue";
+import LandingTop from "./components/Landing/LandingTop"
+
+
 function App() {
+  
   return (
+    
+
     <Router>
-
-
-    <div className="App">
-    <Switch>
-     <Route exact path="/" >
+      <div className="App">
         <Header/>
-      <Hero/>
-      <LandingBottom/>
-      <div className="emptyDiv"/>
-      <Footer/>
-     </Route>
-      <Route exact path="/Catalogue">
-        <Catalogue />
-      </Route>
+      <Switch>
+      <Route exact path="/" >
+        <LandingTop/>
+        
 
-      
-      
+      </Route>
+      <Route exact path="/Catalogue" component={Catalogue}>
+        
+      </Route>
+      </Switch>
+    
+      </div>
+    </Router>  
      
       
-    </Switch>
     
-    </div>
-    </Router>
+    
+    
     
   );
 }

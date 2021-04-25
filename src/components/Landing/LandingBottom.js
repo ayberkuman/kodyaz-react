@@ -11,7 +11,7 @@ const LandingBottom = () => {
       <div className="step1">
         <div className="circle1">1</div>
         <div className="svg1">
-          <img src={firstsvg}/>
+          <img alt="logo" src={firstsvg}/>
         </div>
         <div className="write1">
           <h3>Ne öğrenmek istediğini seç</h3>
@@ -19,11 +19,11 @@ const LandingBottom = () => {
             dersimizi seç ve başla.</h6>
         </div>
       </div>
-      <img className="arrows" src={arrow}/>
+      <img alt="logo"  className="arrows" src={arrow}/>
       <div className="step2">
         <div className="circle2">2</div>
         <div className="svg2">
-        <img src={secondsvg}/>
+        <img  alt="logo" src={secondsvg}/>
         </div>
         <div className="write2">
           <h3>Yazarak öğren</h3>
@@ -31,11 +31,11 @@ const LandingBottom = () => {
           öğren.</h6>
         </div>
       </div>
-      <img className="arrows" src={arrow}/>
+      <img  alt="logo" className="arrows" src={arrow}/>
       <div className="step3">
         <div className="circle3">3</div>
         <div className="svg3">
-        <img src={thirdsvg}/>
+        <img  alt="logo" src={thirdsvg}/>
         </div>
         <div className="write3">
           <h3>Projelerle geliş</h3>
@@ -43,11 +43,11 @@ const LandingBottom = () => {
           et, pratiğe dök ve geliştir.</h6>
         </div>
       </div>
-      <img className="arrows" src={arrow}/>
+      <img alt="logo"  className="arrows" src={arrow}/>
       <div className="step4">
         <div className="circle4">4</div>
         <div className="svg4">
-        <img src={fourthsvg}/>
+        <img  alt="logo" src={fourthsvg}/>
         </div>
         <div className="write4">
           <h3>Hayalindeki işe gir</h3>

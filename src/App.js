@@ -1,4 +1,4 @@
-import {useState} from "react";
+
 import Header from "./components/Landing/Header"
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom"
 import Catalogue from "./components/Katalog/Catalogue";
@@ -14,14 +14,12 @@ function App() {
       <div className="App">
         <Header/>
       <Switch>
-      <Route exact path="/" >
+        <Route exact path="/" >
         <LandingTop/>
-        
-
       </Route>
-      <Route exact path="/Catalogue" component={Catalogue}>
-        
-      </Route>
+        <Route path="/Catalogue" exact>
+          <Catalogue />
+,,      </Route>
       </Switch>
     
       </div>

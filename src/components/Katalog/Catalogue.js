@@ -1,12 +1,18 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 const Catalogue = () => {
+  const [asd, setAsd] = useState("Hazır mıyız")
+
+  useEffect(() => {
+    setAsd("sikler")
+  }, [])
+
   return (
     
     <div className="catWrapper" >
       
       <div className="card1">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, temporibus.</p>
+        <p>{asd}</p>
       </div>
       <div className="card2"></div>
       <div className="card3"></div>

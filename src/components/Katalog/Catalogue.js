@@ -1,28 +1,91 @@
-import React, {useState, useEffect} from 'react'
-
+import "./style.scss";
+import htmlSvg from "./htmlLogo.svg";
+import { Link } from "react-router-dom";
 const Catalogue = () => {
-  const [asd, setAsd] = useState("Hazır mıyız")
-
-  useEffect(() => {
-    setAsd("sikler")
-  }, [])
-
   return (
-    
-    <div className="catWrapper" >
-      
+    <div className="catWrapper">
       <div className="card1">
-        <p>{asd}</p>
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
       </div>
-      <div className="card2"></div>
-      <div className="card3"></div>
-      <div className="card4"></div>
-      <div className="card5"></div>
-      <div className="card6"></div>
-      <div className="card7"></div>
-      <div className="card8"></div>
+      <div className="card1">
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
+      </div>
+      <div className="card1">
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
+      </div>
+      <div className="card1">
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
+      </div>
+      <div className="card1">
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
+      </div>
+      <div className="card1">
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
+      </div>
+      <div className="card1">
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
+      </div>
+      <div className="card1">
+        <img alt="logo" src={htmlSvg} />
+        <h2>HTML</h2>
+        <h6>
+          Hiper Metin İşaretleme Dili, web sayfalarını oluşturmak için
+          kullanılan web'in en temel yapı taşıdır. Web içeriğinin anlamını ve
+          yapısını tanımlar.
+        </h6>
+        <Link className="myLink">Hemen Öğren</Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Catalogue
+export default Catalogue;

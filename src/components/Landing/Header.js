@@ -1,9 +1,8 @@
 import "./style.scss";
-import { useState } from "react";
 import React from "react";
 import Button from "./Button";
 import Button2 from "./Button2";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const logo = "( ) => kodla";

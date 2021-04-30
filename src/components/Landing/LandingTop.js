@@ -1,17 +1,17 @@
-import React from 'react'
-import LandingBottom from "./LandingBottom"
-import Hero from "./Hero"
-import Footer from "./Footer"
+import React from "react";
+import LandingBottom from "./LandingBottom";
+import Hero from "./Hero";
+import Footer from "./Footer";
+
 const LandingTop = () => {
   return (
-    <div className="landing" >
-       
-      <Hero/>
-      <LandingBottom/>
-      <div className="emptyDiv"/>
-      <Footer/>
-    </div>
-  )
-}
+    <>
+      <Hero />
+      <LandingBottom />
+      <div className="emptyDiv" />
+      <Footer />
+    </>
+  );
+};
 
-export default LandingTop
+export default LandingTop;

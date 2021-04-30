@@ -12,6 +12,7 @@ function App() {
           <Route exact path="/">
             <LandingTop />
           </Route>
+
           <Route path="/Catalogue" exact>
             <Catalogue />
           </Route>

@@ -63,10 +63,11 @@ $lightGray: #2c303a;
   width: 50%;
   object-fit: cover;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   left: 0px;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 0.5s all;
+  border-bottom-right-radius: 20px;
 }
 .card .info {
   position: relative;
@@ -89,4 +90,5 @@ $lightGray: #2c303a;
   height: 100%;
   width: 100%;
   border-radius: 20px;
+  opacity: 0;
 }

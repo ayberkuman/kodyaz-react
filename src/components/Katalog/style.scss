@@ -3,92 +3,90 @@ $primColor: #fcee30;
 $darkest: #131417;
 $midGray: #252830;
 $lightGray: #2c303a;
-* {
+*,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .catWrapper {
-  height: 120vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.card {
-  width: 21%;
-  padding: 2rem 1rem;
-  background: $lightGray;
   position: relative;
   display: flex;
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s ease-in-out;
-  border-radius: 20px;
-  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
-.card:hover {
-  transform: translateY(20px);
+.catWrapper .card {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  margin: 15px;
+  overflow: hidden;
 }
-.card:before {
+.catWrapper .card .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.catWrapper .card .contentBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.catWrapper .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.catWrapper .card .contentBx::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 0;
-  display: block;
+  left: 0;
   width: 100%;
   height: 100%;
   background: $darkest;
-  z-index: 2;
-  transition: 0.5s all;
-  opacity: 0;
-  border-radius: 20px;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
 }
-
-.card:hover:before {
-  opacity: 0.9;
+.catWrapper .card:hover .contentBx::before {
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(1);
+  transform-origin: left;
 }
-.card h1 {
-  color: $primColor;
-  position: absolute;
-  right: 10px;
-  transition: 0.5s all;
+.catWrapper .card .contentBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-.card:hover h1 {
-  opacity: 0;
-}
-.card img {
-  height: 50%;
-  width: 50%;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  opacity: 0.8;
-  transition: 0.5s all;
-  border-bottom-right-radius: 20px;
-}
-.card .info {
+.catWrapper .card .contentBx .content {
   position: relative;
-  z-index: 3;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.5s all;
+  padding: 30px;
+  z-index: 1;
+  transition: 0.5s;
+  transform: translateX(-300px);
   text-align: center;
 }
-
-.card:hover .info {
-  opacity: 1;
-  transform: translateY(0px);
+.catWrapper .card:hover .contentBx .content {
+  transform: translateX(0px);
 }
-.card .info p {
-  margin: 10px;
+.catWrapper .card .contentBx .content h3,
+p {
+  margin: 15px;
 }
-.card:hover img {
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-  opacity: 0;
+.catWrapper .card .contentBx .content .btn {
+  margin: 15px;
 }

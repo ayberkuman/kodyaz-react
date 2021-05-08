@@ -11,82 +11,27 @@ html {
 }
 
 .catWrapper {
-  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  margin-top: 40px;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
 }
 .catWrapper .card {
-  position: relative;
-  width: 300px;
-  height: 320px;
-  margin: 15px;
-  overflow: hidden;
-}
-.catWrapper .card .imgBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-}
-.catWrapper .card .contentBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.catWrapper .card .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.catWrapper .card .contentBx::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $darkest;
-  transition: transform 0.5s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: 10px;
-}
-.catWrapper .card:hover .contentBx::before {
-  transition: transform 0.5s ease-in-out;
-  transform: scaleX(1);
-  transform-origin: left;
-}
-.catWrapper .card .contentBx {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  margin: 20px;
   align-items: center;
-  color: white;
+  background: wheat;
 }
-.catWrapper .card .contentBx .content {
-  position: relative;
-  padding: 30px;
-  z-index: 1;
-  transition: 0.5s;
-  transform: translateX(-300px);
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-.catWrapper .card:hover .contentBx .content {
-  transform: translateX(0px);
-}
-.catWrapper .card .contentBx .content h3,
-p {
-  margin: 15px;
-}
-.catWrapper .card .contentBx .content .btn {
-  margin: 15px;
+.contentBx {
+  display: none;
 }

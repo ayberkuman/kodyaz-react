@@ -13,19 +13,17 @@ const MapThis = ({ animationEnter, mouseLeave }) => {
       onMouseLeave={mouseLeave}
       className="card"
     >
-      <div className="imgBx">
-        <img src={htmlSvg} alt="" />
-      </div>
-      <div className="contentBx">
-        <div className="content">
-          <h3>HTML</h3>
-          <p>
-            Web sayfalarını oluşturma aşamasında kullanılan standart bir metin
-            işaret dili olan HTML,“Hyper Text Markup Language” olarak bilinir ve
-            web sitelerinin iskeleti denilebilir.
-          </p>
-          <Button2 name={"Hemen Öğren"} />
-        </div>
+      <h1>HTML</h1>
+      <img src={htmlSvg} alt="" />
+
+      <div className="content">
+        <h3>HTML</h3>
+        <p>
+          Web sayfalarını oluşturma aşamasında kullanılan standart bir metin
+          işaret dili olan HTML,“Hyper Text Markup Language” olarak bilinir ve
+          web sitelerinin iskeleti denilebilir.
+        </p>
+        <Button2 name={"Hemen Öğren"} />
       </div>
     </div>
   );
@@ -51,7 +49,14 @@ const Catalogue = () => {
 
   return (
     <div className="catWrapper">
-      <MapThis animationEnter={animationMaker} mouseLeave={mouseLeave} />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave}*/ />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave} */ />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave} */ />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave} */ />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave} */ />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave} */ />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave} */ />
+      <MapThis /*animationEnter={animationMaker} mouseLeave={mouseLeave} */ />
     </div>
   );
 };

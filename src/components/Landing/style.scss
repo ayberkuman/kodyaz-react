@@ -147,7 +147,11 @@ $lightGray: #2c303a;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-
+  background: linear-gradient(
+    180deg,
+    rgba(37, 40, 48, 1) 85%,
+    rgba(19, 20, 23, 1) 100%
+  );
   h1 {
     color: $primColor;
     font-family: "Roboto Slab", serif;

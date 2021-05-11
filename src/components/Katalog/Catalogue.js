@@ -23,7 +23,9 @@ const MapThis = ({ animationEnter, mouseLeave }) => {
           işaret dili olan HTML,“Hyper Text Markup Language” olarak bilinir ve
           web sitelerinin iskeleti denilebilir.
         </p>
-        <Button2 name={"Hemen Öğren"} />
+        <Link to={{ pathname: "/" }} className="myLink">
+          Hemen Öğren
+        </Link>
       </div>
     </div>
   );
